@@ -77,15 +77,13 @@ section + section {
   margin-top: 34px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+.overview-item {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
 }
 
-.grid article {
-  border-top: 1px solid var(--line);
-  padding-top: 14px;
+.overview-item + .overview-item {
+  margin-top: 22px;
 }
 
 .paper {
@@ -152,10 +150,6 @@ details ul {
   .page {
     width: min(100% - 28px, 860px);
     padding-top: 42px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
   }
 
   .paper {
